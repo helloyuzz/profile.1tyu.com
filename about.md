@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 四川广聚其力
 ---
 
 <p class="message">
