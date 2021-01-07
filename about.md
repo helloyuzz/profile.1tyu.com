@@ -1,6 +1,7 @@
 ---
 layout: page
-title: 四川广聚其力
+title: 关于
+date: '2020-01-01'
 ---
 
 <p class="message">
