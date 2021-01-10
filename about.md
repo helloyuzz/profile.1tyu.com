@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 关于
+title: About
 date: '2020-01-01'
 ---
 

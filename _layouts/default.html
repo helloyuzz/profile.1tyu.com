@@ -4,16 +4,16 @@
   {% include head.html %}
 
   <body class="theme-base-0d">
-
+    <a id="A1"></a>
     {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       <div class="masthead">
-        <div class="container">
+        <div class="container ">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <a class="text-decoration-none" href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
         </div>
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle btn btn-success"></label>
+    <label for="sidebar-checkbox" class="sidebar-toggle btn btn-success"  style="display: none;"></label>
 
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
   </body>

@@ -1,35 +1,56 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" checked="checked" id="sidebar-checkbox">
+<input type="checkbox" class="sidebar-checkbox" checked="checked" id="sidebar-checkbox" disabled>
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <h1 class="btn btn-success">{{ site.description }}</h1>
+  <div class="sidebar-item" style="padding: 0px;margin:13px;">
+    <h1 class="btn btn-success" style="font-size: 16pt;">{{ site.description }}</h1>
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
+    <a class="text-decoration-none sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}"
+      href="{{ '/' | absolute_url }}">https://profile.1tyu.com</a>
 
     {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
+    The code below dynamically generates a sidebar nav of pages with
+    `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
 
     {% assign pages_list = site.pages | sort:"date" %}
     {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
-        {% endif %}
-      {% endif %}
+    {% if node.title != null %}
+    {% if node.layout == "page" %}
+    <a class="text-decoration-none sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
+      href="#{{ node.url | absolute_url }}">{{ node.title }}</a>
+    {% endif %}
+    {% endif %}
     {% endfor %}
 
     <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
     <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
-    <span class="sidebar-nav-item">v{{ site.version }}</span>
-  </nav>
+    <!-- <span class="sidebar-nav-item">v{{ site.version }}</span> -->
 
+  </nav>
+  <div class="row">
+    <div class="col">
+      <div class="btn-group" style="padding:18px;">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          快速选择
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#A1"><i class="fa fa-user" style="margin-right:3px;"></i>基本信息</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#"><i class="fa fa-calendar" style="margin-right:3px;"></i>教育经历</a></li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#"><i class="fa fa-sitemap" style="margin-right:3px;"></i>职业意向</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#"><i class="fa fa-plane" style="margin-right:3px;"></i>工作经历</a></li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#"><i class="fa fa-list-ul" style="margin-right:3px;"></i>项目经历</a></li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#"><i class="fa fa-male" style="margin-right:3px;"></i>个人简介</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="sidebar-item">
     <p>
       &copy; {{ site.time | date: '%Y' }}. All rights reserved.
