@@ -4,49 +4,59 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar shadow-lg" id="sidebar">
-  <div class="sidebar-item" style="padding: 0px;margin:13px;">
+  <!-- <div class="sidebar-item" style="padding: 0px;margin:13px;">
     <h1 class="btn btn-success" style="font-size: 16pt;">{{ site.description }}</h1>
-  </div>
+  </div> -->
 
-  <nav class="sidebar-nav">
-    <a class="text-decoration-none sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}"
-      href="{{ '/' | absolute_url }}">https://profile.1tyu.com</a>
+  <!-- <nav class="sidebar-nav">
+    <!-- <a class="text-decoration-none sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}"
+      href="{{ '/' | absolute_url }}">https://profile.1tyu.com</a> -->
 
-    {% comment %}
+    <!-- { % comment % }
     The code below dynamically generates a sidebar nav of pages with
     `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
+    { % endcomment % }
 
-    {% assign pages_list = site.pages | sort:"date" %}
-    {% for node in pages_list %}
-    {% if node.title != null %}
-    {% if node.layout == "page" %}
+    { % assign pages_list = site.pages | sort:"date" % }
+    { % for node in pages_list % }
+    { % if node.title != null % }
+    { % if node.layout == "page" % }
     <a class="text-decoration-none sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
       href="#{{ node.url | absolute_url }}">{{ node.title }}</a>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
+    { % endif % }
+    { % endif % }
+    { % endfor %} -->
 
     <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
     <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
     <!-- <span class="sidebar-nav-item">v{{ site.version }}</span> -->
 
-  </nav>
+  <!-- </nav> --> 
   <div class="row">
     <div class="col">
-      <div class="btn-group" style="padding:18px;">
-        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          快速选择
+      <div class="btn-group" style="padding:4px;width:100%;">
+        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="text-align: left;">
+          快速跳转
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item text-dark text-decoration-none" href="#A1"><i class="fa fa-user" style="margin-right:3px;"></i>基本信息</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item text-dark text-decoration-none" href="#A2"><i class="fa fa-calendar" style="margin-right:3px;"></i>教育经历</a></li>
-          <li><a class="dropdown-item text-dark text-decoration-none" href="#A3"><i class="fa fa-sitemap" style="margin-right:3px;"></i>职业意向</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item text-dark text-decoration-none" href="#A4"><i class="fa fa-plane" style="margin-right:3px;"></i>工作经历</a></li>
-          <li><a class="dropdown-item text-dark text-decoration-none" href="#A5"><i class="fa fa-male" style="margin-right:3px;"></i>个人简介</a></li>
-          <li><a class="dropdown-item text-dark text-decoration-none" href="#A6"><i class="fa fa-list-ul" style="margin-right:3px;"></i>项目经历</a></li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#A1"><i class="fa fa-user"
+                style="margin-right:3px;"></i>基本信息</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#A2"><i class="fa fa-calendar"
+                style="margin-right:3px;"></i>教育经历</a></li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#A3"><i class="fa fa-sitemap"
+                style="margin-right:3px;"></i>职业意向</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#A4"><i class="fa fa-plane"
+                style="margin-right:3px;"></i>工作经历</a></li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#A5"><i class="fa fa-male"
+                style="margin-right:3px;"></i>个人简介</a></li>
+          <li><a class="dropdown-item text-dark text-decoration-none" href="#A6"><i class="fa fa-list-ul"
+                style="margin-right:3px;"></i>项目经历</a></li>
         </ul>
       </div>
     </div>
