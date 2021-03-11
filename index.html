@@ -2,12 +2,6 @@
 layout: default
 title: 简历
 ---
-<div class="row" style="margin-bottom: 8px;">
-  <div class="col">
-    <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-user"
-        style="margin-right:3px;"></i>基本信息</button>
-  </div>
-</div>
 <!-- <div class="row" style="margin-bottom: 8px;">
   <div class="col">
     <span class="badge rounded-pill bg-info">研发团队管理</span>
@@ -22,58 +16,67 @@ title: 简历
 </div> -->
 
 
-
-<div class="row">
-  <div class="col-sm-2">
-    <figure class="figure">
-      <img src="https://image0.lietou-static.com/big/5f59deeff6d1ab58475129b003u.jpg"
-        class="figure-img img-fluid rounded mx-auto" alt="...">
-      <figcaption class="figure-caption">A caption for the above image.</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-8">
-    <div class="row" style="padding-left:3px;margin-top:13px;">
-      <div class="col-md-4">
-        <label class="form-label">姓名：</label>
-        <label class="form-label">余东庄</label>
-      </div>
-      <div class="col-md-4">
-        <label class="form-label">出生日期：</label>
-        <label class="form-label">1984年</label>
-      </div>
-    </div>
-    <div class="row" style="padding-left:3px;">
-      <div class="col-md-4">
-        <label class="form-label">籍贯：</label>
-        <label class="form-label">重庆</label>
-      </div>
-      <div class="col-md-4">
-        <label class="form-label">学历：</label>
-        <label class="form-label">本科</label>
-      </div>
-    </div>
-    <div class="row" style="padding-left:3px;">
-      <div class="col-md-4">
-        <label class="form-label">手机：</label>
-        <label class="form-label">180 1130 6669</label>
-      </div>
-      <div class="col-md-4">
-        <label class="form-label">邮箱：</label>
-        <label class="form-label">yusais_life@qq.com</label>
-      </div>
-    </div>
-    <div class="row" style="padding-left:3px;">
-      <div class="col-md-6">
-        <label class="form-label">状态：</label>
-        <label class="form-label">在职-考虑机会</label>
-      </div>
-      <div class="col-md-3">
-        <label class="form-label"></label>
-        <label class="form-label"></label>
-      </div>
-    </div>
-  </div>
-</div>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">基本信息</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">更多选择</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">教育经历</a></li>
+      <li><a class="dropdown-item" href="#">职业意向</a></li>
+      <li><a class="dropdown-item" href="#">工作经历</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">联系方式</a></li>
+    </ul>
+  </li>
+</ul>
+<table class="table table-hover table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Summary</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>姓名：</td>
+      <td>余东庄</td>
+      <td>@name</td>
+    </tr>
+    <tr>
+      <td>YOB：</td>
+      <td>1984年</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>籍贯：</td>
+      <td>重庆</td>
+      <td>@twitter</td>
+    </tr>
+    <tr>
+      <td>学历：</td>
+      <td>本科</td>
+      <td>@edu</td>
+    </tr>
+    <tr>
+      <td>手机：</td>
+      <td>180 1130 6669</td>
+      <td>@mobile</td>
+    </tr>
+    <tr>
+      <td>邮箱：</td>
+      <td>yusais_life@qq.com</td>
+      <td>@email</td>
+    </tr>
+    <tr>
+      <td>状态：</td>
+      <td>在职-考虑机会</td>
+      <td>@status</td>
+    </tr>
+  </tbody>
+</table>
 
 <a id="A3"></a>
 <div class="row" style="margin-bottom: 3px;">
@@ -82,12 +85,39 @@ title: 简历
         style="margin-right:3px;"></i>职业意向</button>
   </div>
 </div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
 <div class="row" style="margin-bottom: 3px;">
-  <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item"><h3>行业 :</h3>
+  <div class="col"><h3>行业 :</h3>
         <h3><span class="badge bg-light rounded-pill text-dark">计算机软件，IT服务/系统集成，信息安全，物联网，硬件设计制造</span></h3>
-      </li>
       <li class="list-group-item"><h3>职能 :</h3>
         <h3> <span class="badge bg-light rounded-pill text-dark">产品设计，需求对接，产品团队管理，技术团队管理，公司团队协作管理</span></h3>
       </li>
@@ -112,7 +142,7 @@ title: 简历
   <div class="col" style="line-height: 200%;">
     <h3>
     <p>
-      从98年学C语言开始，到现在编程已经二十多年，对软件工程有一定的个人理解和较深理论基础，同时，对产品和研发也有一定的个人积累，有较多实际项目经验。2006年到三十所参加第一份工作，从编写代码开始，逐渐转型为研发团队管理。有较强的抗压能力，能快速完成上级交付的任务，在三十所多次获得年度先进个人、及优秀管理者荣誉。
+      软件工程出身，从98年开始学C语言，到现在编程已经二十多年，对软件工程有一定的个人理解和较深理论基础，同时，对产品和研发也有一定的个人积累，有较多实际项目经验。2006年到三十所参加第一份工作，从编写代码开始，逐渐转型为研发团队管理。有较强的抗压能力，能快速完成上级交付的任务，在三十所多次获得年度先进个人、及优秀管理者荣誉。
     </p>
 
     <p>随着物联网发展，几年前从三十所出来，进入了智能硬件领域，组建团队完成了“塔机”、“门机”、“聚砼”等设备的研发（其中塔机设备川渝市场占有率第一）；</p>
@@ -218,6 +248,15 @@ title: 简历
 </div>
 
 
+<div class="row">
+  <div class="col-sm-2">
+    <figure class="figure">
+      <img src="https://image0.lietou-static.com/big/5f59deeff6d1ab58475129b003u.jpg"
+        class="figure-img img-fluid rounded mx-auto" alt="...">
+      <figcaption class="figure-caption">A caption for the above image.</figcaption>
+    </figure>
+  </div>
+</div>
 <div class="row" >
   <div class="col-3">
     <img src="https://gitee.com/helloyuzz/sharepic/raw/master/bio/IMG_0133.JPG" style="width:96%;margin-left:4px;margin-right:13px;">
