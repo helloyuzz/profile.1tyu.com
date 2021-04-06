@@ -568,3 +568,18 @@ a.pagination-item:hover {
 .badge{
   font-weight: normal !important;
 }
+
+td,p,button {
+  font-size:1.65rem;
+}
+p {
+  font-family: 宋体;
+  line-height: 200%;
+}
+  p.inddent {
+    text-indent: 1cm;
+    line-height: 100%;
+  }
+span {
+    text-indent:13px;
+}
