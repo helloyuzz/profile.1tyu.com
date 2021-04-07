@@ -570,7 +570,7 @@ a.pagination-item:hover {
 }
 
 td,p,button {
-  font-size:1.65rem;
+  font-size:1.45rem;
 }
 p {
   font-family: 宋体;
@@ -578,7 +578,8 @@ p {
 }
   p.inddent {
     text-indent: 1cm;
-    line-height: 100%;
+    line-height: 200%;
+    font-size:1.35rem;
   }
 span {
     text-indent:13px;
