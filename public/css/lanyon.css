@@ -569,7 +569,10 @@ a.pagination-item:hover {
   font-weight: normal !important;
 }
 
-td,p,button {
+p.inddent {
+  text-indent: 0.6cm;
+}
+/*td,p,button {
   font-size:1.45rem;
 }
 p {
@@ -583,4 +586,4 @@ p {
   }
 span {
     text-indent:13px;
-}
+}*/
